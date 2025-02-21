@@ -18,6 +18,30 @@ const changeContent = event => {
         </p>
         <p>
           Aside from development, my favorite hobby is tabletop board games. You can find me on <a href='https://boardgamegeek.com/user/andersonhall' alt='board game geek'>Board Game Geek</a>.
+        </p>
+      </section>
+    `;
+    main.innerHTML = content;
+    showMainView();
+  } else if (target.textContent === 'Skills') {
+    const content = `
+    <section>
+        <h3>Skills</h3>
+        <ul class='skills-list'>
+          <li><strong>Programming Languages:</strong> Python, JavaScript, Ruby, C#, SQL</li>
+          <li><strong>Web Development:</strong> HTML, CSS, React, NodeJS</li>
+          <li><strong>Business/Data Analysis:</strong> Business Analysis, Requirements Gathering, Excel, MS SQL Server
+          <li><strong>Product Management:</strong> Product Strategy, Roadmapping, and Execution</li>
+          <li><strong>Business & Leadership:</strong> Agile/Scrum Methodologies, Cross-functional Leadership and Influence, Stakeholder Management</li>
+      </section>
+    `;
+    main.innerHTML = content;
+    showMainView();
+  } else if (target.textContent === 'Contact') {
+    const content = `
+    <section>
+        <h3>Contact Me</h3>
+        <p>Connect with me on <a href='https://www.linkedin.com/in/andyhall81'>LinkedIn</a> or shoot me an <a href='mailto:andersonhall@gmail.com'>email</a>.
       </section>
     `;
     main.innerHTML = content;

@@ -73,6 +73,6 @@ header {
   max-width: 800px;
 }
 
-p {
+p, .skills-list {
   margin: 2rem auto;
 }
