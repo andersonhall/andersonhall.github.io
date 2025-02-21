@@ -23,6 +23,29 @@ const changeContent = event => {
     `;
     main.innerHTML = content;
     showMainView();
+  } else if (target.textContent === 'Projects') {
+    const content = `
+    <section>
+        <h3>Sample Projects</h3>
+        <div class='projects-container'>
+          <div class='project'>
+            <h4>Party Band Website</h4>
+            <img src='./assets/img/SSC.jpg' class='project-img' />
+            <p><strong>Tech:</strong> HTML, CSS (fully responsive)</p>
+            <p><a href='https://github.com/andersonhall/southern-soul'>Github repo</a></p>
+            <p><a href='https://www.southernsoulandco.com'>Live App</a></p>
+          </div>
+          <div class='project'>
+            <h4>Comic Book Memory Game</h4>
+            <img src='./assets/img/MemoryGame.jpg' class='project-img' />
+            <p><strong>Tech:</strong> HTML, CSS (fully responsive), JavaScript, React + Vite</p>
+            <p><a href='https://github.com/andersonhall/memory-game'>Github repo</a></p>
+            <p><a href='https://andersonhall.github.io/memory-game/'>Live App</a></p>
+          </div>
+      </section>
+    `;
+    main.innerHTML = content;
+    showMainView();
   } else if (target.textContent === 'Skills') {
     const content = `
     <section>
@@ -33,15 +56,16 @@ const changeContent = event => {
           <li><strong>Business/Data Analysis:</strong> Business Analysis, Requirements Gathering, Excel, MS SQL Server
           <li><strong>Product Management:</strong> Product Strategy, Roadmapping, and Execution</li>
           <li><strong>Business & Leadership:</strong> Agile/Scrum Methodologies, Cross-functional Leadership and Influence, Stakeholder Management</li>
+        </ul>
       </section>
     `;
     main.innerHTML = content;
     showMainView();
   } else if (target.textContent === 'Contact') {
     const content = `
-    <section>
+      <section>
         <h3>Contact Me</h3>
-        <p>Connect with me on <a href='https://www.linkedin.com/in/andyhall81'>LinkedIn</a> or shoot me an <a href='mailto:andersonhall@gmail.com'>email</a>.
+        <p>Connect with me on <a href='https://www.linkedin.com/in/andyhall81'>LinkedIn</a> or shoot me an <a href='mailto:andersonhall@gmail.com'>email</a>.</p>
       </section>
     `;
     main.innerHTML = content;
